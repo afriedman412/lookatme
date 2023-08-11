@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+  {% include 'head.html' %}
+
+  <body>
+
+    <div class="container content">
+      <p></p>
+
+      <main>
+        <h1>Andrew Friedman</h1>
+        <p>
+        <em>afriedman412 [at] gmail [dot] com</em><br>
+      </p>
+        <p>
+          <a href="/">Home</a> • <a href="/code">Code</a> • <a href="/data">Data</a> • <a href="/writing">Writing</a> • <a href="/about">About</a>
+        </p>
+        {% if tag == 'home' %}
+            <p><img src="static/images/bio-photo.jpg" /></p>
+        {% else %}
+            {% for d in data %}
+                {% if tag == 'writing' %}
+                    {% if tag in d.tags %}
+                        <h2><a href="{{ d.url }}">{{ d.title }}</a></h2>
+                        <p>
+                            {{ d.date }}<br>
+                            {{ d.publication }}<br>
+                            {% if 'collaborators' in d %}
+                                with
+                                {% for c in d.collaborators %}
+                                    <a href="{{ c.url }}">{{ c.name }}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </p>
+                        <p>{{ d.synopsis }}</p>
+                        <p>---</p>
+                    {% endif %}
+                {% elif tag == 'work' %}
+                    {% if tag in d.tags %}
+                        <h2>{{ d.position }}</a></h2>
+                        <p>
+                            <a href="{{ d.url }}">{{ d.organization }}</a><br>
+                            {{ d.date }} to {{ d.end_date if 'end_date' in d else ''}}<br>
+                        </p>
+                        <p>{{ d.synopsis }}</p>
+                        <p>---</p>
+                    {% endif %}
+                {% elif tag == 'code' %}
+                    {% if tag in d.tags %}
+                        <h2><a href="{{ d.url }}">{{ d.title }}</a></h2>
+                        <p>
+                            {% if 'organization' in d %}
+                                {{ d.organization }}<br>
+                            {% endif %}
+                            {{ d.date }}<br>
+                        </p>
+                        <p>{{ d.synopsis }}</p>
+                        <p>---</p>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+      </main>
+      {% include 'footer.html' %}
+    </div>
+  </body>
+</html>
