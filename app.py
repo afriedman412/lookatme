@@ -14,4 +14,4 @@ def data(tag):
    return render_template(f'page.html', data=data, tag=tag)
 
 if __name__=="__main__":
-   app.run(debug=True)
+   app.run()
