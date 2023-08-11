@@ -13,5 +13,5 @@ def data(tag):
       data = json.load(json_file)
    return render_template(f'page.html', data=data, tag=tag)
 
-if __name__=="__main__":
-   app.run()
+# if __name__=="__main__":
+#    app.run()
