@@ -8,16 +8,16 @@
 
 {% macro skills(e) %}
 {% if 'skills' in e %}
-    <b>Skills:</b> {{ e.skills | join(", ") }}
+    <span class="skill"><b>SKILLS:</b></span><br> {{ e.skills | join(", ") }}
 {% endif %}
 {% endmacro %}
 
 {% macro responsibilities(e) %}
 {% if 'responsibilities' in e %}
-    <h4>Key responsibilities:</h4>
+    <h4 class="skill">KEY RESPONSIBILITIES:</h4>
     <ul>
         {% for r in e.responsibilities %}
-        <li>{{ r }}</li>
+        <li>{{ r | safe }}</li>
         {% endfor %}
     </ul>
 {% endif %}

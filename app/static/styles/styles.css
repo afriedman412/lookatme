@@ -19,6 +19,7 @@
     --teal: #12b886;
     --green: #40c057;
     --dark-green: rgb(0, 73, 0);
+    --dark-plum: rgb(83, 0, 67);
     --yellow: #fab005;
     --orange: #fd7e14;
     --blue-300: #74c0fc;
@@ -97,6 +98,10 @@ img {
     display: inline-block;
     vertical-align: top; /* Adjust vertical alignment if needed */
     margin-right: 10px; /* Add some spacing between images */
+}
+
+.skill {
+    color: var(--dark-green)
 }
 
 hr.new5 {

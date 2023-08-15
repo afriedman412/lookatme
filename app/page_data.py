@@ -48,7 +48,7 @@ entries = [
                 "url": "https://twitter.com/notrivia"
             }
         ],
-        "synopsis": "We tracked the rate of use of “officer-involved” and similar exonerative language across 20 years of American reporting on police violence. I was responsible for data acquistion and analysis, which involved TKTKTK",
+        "synopsis": "We tracked the rate of use of “officer-involved” and similar exonerative language across 20 years of American reporting on police violence.",
         "tags": [
             "data",
             "writing"
@@ -209,7 +209,7 @@ entries = [
         "end_date": "6-1-2023",
         "synopsis": """In partnership with the <a href='https://wagner.nyu.edu/'>NYU Wagner School of Public Service</a>, I worked with graduate students to investigate American newspapers' reliance on police sources when reporting on crime, and how that affected coverage of both crime and police. While the students conducted an in-depth analysis of a representative 300 article sample, I used a programmatic approach to analyze the full 100,000 article data set.""",
         "responsibilities": [
-            "Development of <a href='https://github.com/afriedman412/sayswho'>a standalone Python package for quote identification, attribution and resolution",
+            "Development of <a href='https://github.com/afriedman412/sayswho'>a standalone Python package</a> for quote identification, attribution and resolution",
             "Acquisition and processing of 100,000 articles",
             "Lexis/Nexis query optimization to minimize irrelevant or off-topic articles",
             "Topic modeling to verify the fidelity of the students' sub-sample"
