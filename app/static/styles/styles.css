@@ -100,6 +100,13 @@ img {
     margin-right: 10px; /* Add some spacing between images */
 }
 
+.image-crop-container {
+    height: 500px; /* Set the desired height of the cropped area */
+    overflow: hidden; /* Hide the content that overflows the container */
+    position: relative; /* Establish a positioning context for the child elements */
+}
+
+
 .skill {
     color: var(--dark-green)
 }

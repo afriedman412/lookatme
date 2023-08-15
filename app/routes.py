@@ -7,11 +7,7 @@ def get_sort_date(entry):
    else:
       return dt.strptime(entry['date'], "%m-%d-%Y")
 
-
 def home():
-   return render_template('page.html', tag='home')
-
-def about():
    from .page_data import content
    return render_template('about.html', tag='about', entries=content)
 

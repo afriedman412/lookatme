@@ -62,7 +62,7 @@
             <hr>
         {% endfor %}
     {% elif tag == 'work' %}
-        {{ section_header("WORK EXPERIENCE") }}
+        {{ section_header("WORK") }}
         {% for e in entries %}
             <h2>{{ e.position }}</a></h2>
             <p>
@@ -75,7 +75,7 @@
             <hr>
         {% endfor %}
     {% elif tag == 'code' %}
-        {{ section_header("CODING PROJECTS") }}
+        {{ section_header("CODE") }}
         {% for e in entries %}
             <h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
             <p>

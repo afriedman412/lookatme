@@ -1,14 +1,19 @@
 
   {% include 'head.html' %}
 
+{% macro section_header(header_text) %}
+<hr class="new5">
+    <h1 style="text-align: center;">{{ header_text }}</h1>
+<hr class="new5">
+{% endmacro %}
+
   <body>
 
-    <hr class="new5">
-      <h1 style="text-align: center;">ABOUT</h1>
-    <hr class="new5">
-    <p><img style="width:50%; margin: auto;" src="https://afriedman412.github.io/assets/images/IMG_6981_alm_edit.jpg"></p>
-  
-  <p>My name is Andrew, but I go by Andy.</p>
+{{ section_header('ABOUT') }}
+<div class="image-crop-container">
+    <img style="width: 65%; margin: auto;" src="{{ url_for('static', filename='images/IMG_6980_alm_edit.jpg')}}">
+</div>    
+  <p>My name is Andrew, but most people call me Andy.</p>
   
   <p>I am a data scientist, coder, writer and talker. I wear a lot of hats and like to learn through doing.</p>
   
@@ -17,20 +22,36 @@
   <p>I used to DJ a lot. I am still technically signed to Tommy Boy Records.</p>
   
   <p>Before that, I did genomic research at NYU.</p>
-  
-  <h4 id="the-last-three-songs-i-listened-to">The last three songs I listened to***:</h4>
+
+  {{ section_header('SKILLS') }}
+
+  <p>
+    <span class="skill"><b>BROADLY:</b></span><br>
+    Data acquisition, cleaning and standardization, machine learning, predictive modeling, natural language processing, statistical analysis, Data visualization, narrative storytelling
+  </p>
+  <p>
+    <span class="skill"><b>TECHNICALLY:</b></span><br>
+    Python, SQL, AWS, Google Cloud, Azure, Bitbucker, Docker, Twilio
+  </p>
+  <p>
+    <span class="skill"><b>SPECIFICALLY:</b></span><br>
+    Pandas, PyTorch, SpaCy, BERT, Scikit-Learn, HuggingFace, NLTK, Flask, FastAPI, Poetry 
+  </p>
+  {{ section_header('LATELY') }}
+  <em>Updated infrequently!</em>
+
+  <h4 id="the-last-three-songs-i-listened-to">The last three songs I listened to:</h4>
   <ul>
     {% for s in entries.songs %}
         <li>{{ s.artist }} - "{{ s.title }}</li>
     {% endfor %}
   </ul>
-  
-  <h4 id="the-last-three-books-i-read">The last three books I read***:</h4>
+
+  <h4 id="the-last-three-books-i-read">The last three books I read:</h4>
   <ul>
     {% for b in entries.books %}
         <li>{{ b.author }} - <i>{{ b.title }}</i></li>
     {% endfor %}
   </ul>
-  
-  <p>*** updated infrequently</p>
+
 {% include 'footer.html' %}

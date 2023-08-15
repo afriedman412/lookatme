@@ -105,7 +105,7 @@ entries = [
             }
 
         ],
-        "synopsis": "After Baltimore decriminalized the possession of an amount of cannabis, we investigated how the city's police were handling the new policies. By cross-referencing census records with data acquired from Baltimore Police, I was able to demonstrate racial bias in the enforcement of the new standards.",
+        "synopsis": "After Baltimore decriminalized the possession of an amount of cannabis, we investigated how the city's police were handling the new policies. By cross-referencing census records with data acquired from Baltimore Police, I was able to demonstrate racial bias in the enforcement of the new standards.<br><br>Baltimore State's Attorney Marilyn Mosby cited our research when <a href='https://www.npr.org/2019/02/03/690975390/baltimore-states-attorney-will-no-longer-prosecute-marijuana-possession-cases'>she announced she would no longer prosecute marijuana possession charges in 2019.</a>",
         "tags": [
             "data",
             "writing"
