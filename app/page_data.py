@@ -1,4 +1,4 @@
-[
+entries = [
     {
         "title": "Baltimore's Crime Numbers Game",
         "publication": "The Real News",
@@ -10,10 +10,31 @@
                 "url": "https://datadrivenreporting.medill.northwestern.edu/"
             }
         ],
-        "synopsis": "The first in an ongoing series of analyses of 30 years of crime in Baltimore, based on the analysis of crime statistics obtained from the Baltimore Police Department. ",
+        "synopsis": "The first in an ongoing series of analyses of 30 years of crime in Baltimore, based on the analysis of crime statistics obtained from the Baltimore Police Department.",
+        "role": [
+            ""
+        ],
         "tags": [
             "data journalism"
         ]
+    },
+    {
+        "organization": "Google/Medill Data-Driven Reporting Project",
+        "url": "https://datadrivenreporting.medill.northwestern.edu/",
+        "date": "6-1-2022",
+        "position": "Data Lead",
+        "synopsis": """Member of a team awarded a grant from the Google/Medill Data-Driven Reporting Project to study 30 years of detailed crime statistics obtained from the Baltimore Police Department.<br><br>Results of the study are being published as a multipart series in <i><a href='http://therealnews.com'>The Real News</a></i>:
+        <ul>
+        <li>Part 1: <a href='https://therealnews.com/baltimore-police-spending-violent-crime-statistics'>Baltimore's Crime Numbers Game</a>
+        <li>Part 2: An in-depth look at Drug Arrests and Homicide Numbers
+        <li>Part 3: An Audit of Baltimore City’s Data Integrity
+        <li>Part 4: An Evaluation of City Budget and Health Metrics
+        </ul>
+        """,
+        "tags": [
+            "work"
+        ]
+
     },
     {
         "title": "Nobody Defunded The Police",
@@ -198,12 +219,20 @@
         ]
     },
     {
-        "organization": "Center for Just Journalism/NYU Wagner School of Public Service",
+        "organization": "Center for Just Journalism",
         "url": "https://justjournalism.org/",
-        "position": "Freelance Data Scientist",
+        "position": "Data Scientist (Contract)",
         "date": "1-1-2023",
         "end_date": "6-1-2023",
-        "synopsis": "A trio of Wagner graduate students investigated the extent to which 10 American newspapers relied on police sources when reporting on crime, and how that affected coverage of both crime and police. I handled data acquisition and processing of 100,000 articles, of which the students analyzed a representative sample of around 300.",
+        "synopsis": """In partnership with the <a href='https://wagner.nyu.edu/'>NYU Wagner School of Public Service</a>, I worked with graduate students to investigate American newspapers' reliance on police sources when reporting on crime, and how that affected coverage of both crime and police. While the students conducted an in-depth analysis of a representative 300 article sample, I used a programmatic approach to analyze the full 100,000 article data set.
+        <br><br>Key responsibilities:
+        <ul>
+        <li>Development of <a href='https://github.com/afriedman412/sayswho'>a standalone Python package for quote identification, attribution and resolution</a>
+        <li>Acquisition and processing of 100,000 articles
+        <li>Lexis/Nexis query optimization to minimize irrelevant or off-topic articles
+        <li>Topic modeling to verify the fidelity of the students' sub-sample
+        </ul>
+        """,
         "tags": [
             "work"
         ]
@@ -214,7 +243,14 @@
         "position": "Data Scientist",
         "date": "11-1-2018",
         "end_date": "8-1-2022",
-        "synopsis": "Chatdesk is a Series A company backed by leading Silicon Valley investors like Menlo Ventures, Susa Ventures and Slow Ventures in the customer service space. I was responsible for cleaning and standardization of over 1 million weekly incoming customer messages in 10+ languages. I developed a model for identifying six different types of messages at 99.5% accuracy, and used named entity recognition to increase the capacity and flexibilty of the processing pipeline.",
+        "synopsis": """Chatdesk is a Series A company backed by leading Silicon Valley investors like Menlo Ventures, Susa Ventures and Slow Ventures in the customer service space, whose customers include leading brands like Grubhub, BarkBox, Thinx, and OLAPLEX.
+        <br><br>Key Responsibilities:
+        <ul>
+        <li>Deployed message classification model for 1 million weekly messages with 99.5% accuracy
+        <li>Implemented Named Entity Recognition to increase flexibility of cleaning code
+        <li>Developed and maintained code base for cleaning and standardization of incoming messages for downstream processing for 100+ companies in 10+ languages, from diverse sources (Zendesk, Salesforce, Intercom, Facebook, Instagram)
+        <li>Attended client meetings for technical integration and conduct data analysis to help our sales team
+        """,
         "tags": [
             "work"
         ]
@@ -231,11 +267,24 @@
         ]
     },
     {
-        "title": "Housing Court Data Scraper / Tenant Intake Hotline",
+        "title": "Housing Court Data Scraper",
         "organization": "Brooklyn Eviction Defense",
+        "url": "https://brooklynevictiondefense.org/",
         "date": "6-1-2020",
-        "synopsis": "An organization dedicated to keeping Brooklyn tenants from losing their apartments, I developed an app to scrape housing court data to help tenants fight evictions which saved lawyers hours of work. I also created a Twilio-based hotline to provide tenants information and resources, and to connect the organization for further aid.",
-        "tools": ["Twilio", "SQL", "Selenium"],
+        "synopsis": "I built a web scraper to help Brooklyn Eviction Defense better protect tenants from eviction. After Covid shut down city courts for several months, the city set up new courts to handle the backlog in housing court cases. These new courts often struggled to contact defendants about updates in their cases, especially given the pandemic upheaval. BED sought to find tenants at risk of missing court dates, and the scraper allowed the organization to do so in minutes instead of hours.",
+        "tools": ["Selenium", "BeautifulSoup", "SQL"],
+        "tags": [
+            "code",
+            "data"
+        ]
+    },
+    {
+        "title": "Tenant Help Hotline",
+        "organization": "Brooklyn Eviction Defense",
+        "url": "https://brooklynevictiondefense.org/",
+        "date": "6-1-2020",
+        "synopsis": "I set up a Twilio-based phone tree to make it easier for less internet-inclined tenants to contact Brooklyn Eviction Defense if they needed the organzition's help. The tree included useful information in both English and Spanish, transcription capabilities which populated intake documents, and a quick response line that automatically texted members in case of emergencies.",
+        "tools": ["Twilio"],
         "tags": [
             "code",
             "data"
@@ -246,11 +295,46 @@
         "organization": "Sludge",
         "date": "6-1-2019",
         "synopsis": "For money in politics site Sludge, I developed and maintain an app that queries both the House and Senate on the hour and downloads any new financial disclosure forms.",
-        "tools": ["Selenium", "BeautifulSoup", "Selenium"],
+        "tools": ["Selenium", "BeautifulSoup"],
         "tags": [
             "code",
+            "data"
+        ]
+    },
+    {
+        "organization": "The Real News",
+        "url": "https://www.therealnews.com",
+        "date": "8-1-2023",
+        "position": "Data Lead (Contract)",
+        "synopsis": "Creating a civilian-facing dashboard for local crime statistics as reported to the FBI.",
+        "tags": [
+            "work",
             "data"
         ]
     }
 
 ]
+
+content = {
+    "books":[
+        {
+            "title": "Dhalgren", "author": "Samuel R. Delany"
+        },
+        {
+            "title": "Ministry For The Future", "author": "Kim Stanley Robinson"
+        },
+        {
+            "title": "Agency", "author": "William Gibson"
+        }
+    ],
+    "songs": [
+        {
+            'title': "Blood Capsules", "artist":"The Mountain Goats"
+        },
+        {
+            "title": "Johnny Dang", "artist": "That Mexican OT f/ dRODI and Paul Wall"
+        },
+        {
+            "title": "Wtf U Mean", "artist": "HAARPER f/ Freddie Dredd"
+        }
+    ]}

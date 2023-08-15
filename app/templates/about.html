@@ -1,0 +1,34 @@
+
+  {% include 'head.html' %}
+
+  <body>
+
+    <h1 class="page-title">About</h1>
+    <p><img style="width:50%" src="https://afriedman412.github.io/assets/images/IMG_6981_alm_edit.jpg"></p>
+  
+  <p>My name is Andrew, but I go by Andy.</p>
+  
+  <p>I am a data scientist, coder, writer and talker. I wear a lot of hats and like to learn through doing.</p>
+  
+  <p>I believe the best data is rare data, and I am particularly interested in data acquisition from difficult sources.</p>
+  
+  <p>I used to DJ a lot. I am still technically signed to Tommy Boy Records.</p>
+  
+  <p>Before that, I did genomic research at NYU.</p>
+  
+  <h4 id="the-last-three-songs-i-listened-to">The last three songs I listened to***:</h4>
+  <ul>
+    {% for s in entries.songs %}
+        <li>{{ s.artist }} - "{{ s.title }}</li>
+    {% endfor %}
+  </ul>
+  
+  <h4 id="the-last-three-books-i-read">The last three books I read***:</h4>
+  <ul>
+    {% for b in entries.books %}
+        <li>{{ b.author }} - <i>{{ b.title }}</i></li>
+    {% endfor %}
+  </ul>
+  
+  <p>*** updated infrequently</p>
+{% include 'footer.html' %}
