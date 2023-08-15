@@ -256,7 +256,7 @@ entries = [
         "organization": "Brooklyn Eviction Defense",
         "url": "https://brooklynevictiondefense.org/",
         "date": "6-1-2020",
-        "synopsis": "I built a web scraper to help Brooklyn Eviction Defense better protect tenants from eviction. After Covid shut down city courts for several months, the city set up new courts to handle the backlog in housing court cases. These new courts often struggled to contact defendants about updates in their cases, especially given the pandemic upheaval. BED sought to find tenants at risk of missing court dates, and the scraper allowed the organization to do so in minutes instead of hours.",
+        "synopsis": "I built a web scraper to help <a href='https://brooklynevictiondefense.org/'>Brooklyn Eviction Defense</a> better protect tenants from eviction. After Covid shut down city courts for several months, the city set up new courts to handle the backlog in housing court cases. These new courts often struggled to contact defendants about updates in their cases, especially given the pandemic upheaval. BED sought to find tenants at risk of missing court dates, and the scraper allowed the organization to do so in minutes instead of hours.",
         "skills": ["Selenium", "BeautifulSoup", "SQL"],
         "tags": [
             "code"
@@ -267,7 +267,7 @@ entries = [
         "organization": "Brooklyn Eviction Defense",
         "url": "https://brooklynevictiondefense.org/",
         "date": "6-1-2020",
-        "synopsis": "I set up a Twilio-based phone tree to make it easier for less internet-inclined tenants to contact Brooklyn Eviction Defense if they needed the organzition's help. The tree included useful information in both English and Spanish, transcription capabilities which populated intake documents, and a quick response line that automatically texted members in case of emergencies.",
+        "synopsis": "I set up a Twilio-based phone tree to make it easier for tenants to contact <a href='https://brooklynevictiondefense.org/'>Brooklyn Eviction Defense</a> if they needed the organzition's help. The tree included useful information in both English and Spanish, transcription capabilities which populated intake documents, and a quick response line that automatically texted members in case of emergencies.",
         "skills": ["Twilio", "SQL", "AWS"],
         "tags": [
             "code"
@@ -277,7 +277,14 @@ entries = [
         "title": "Congressional Financial Disclosure Scraper",
         "organization": "<em>Sludge</em>",
         "date": "6-1-2019",
-        "synopsis": "For money in politics site <em>Sludge</em>, I developed and maintain an app that queries both the House and Senate on the hour and downloads any new financial disclosure forms.",
+        "synopsis": """I developed and continue to maintain an app which downloads congressional financial disclosure forms for <em>Sludge</em>, a non-partisan site dedicated to investigating money in politics.<br><br>
+        A few of the stories which utilized data from the app:
+        <ul>
+        <li><a href='https://readsludge.com/2020/01/13/the-members-of-congress-who-profit-from-war/'>The Members of Congress Who Profit From War</a></li>
+        <li><a href='https://readsludge.com/2020/01/03/members-of-congress-own-up-to-93-million-in-fossil-fuel-stocks/'>Members of Congress Own Up to $93 Million in Fossil Fuel Stocks</a></li>
+        <li><a href='https://www.theguardian.com/us-news/2019/sep/19/us-senators-investments-conflict-of-interest'>Revealed: how US senators invest in firms they are supposed to regulate</a></li>
+        <li><a href='https://readsludge.com/2019/04/10/reps-questioning-megabank-ceos-own-stock-in-their-companies/'>Reps Questioning Megabank CEOs Own Stock in Their Companies</a></li>
+        </ul>""",
         "skills": ["Selenium", "BeautifulSoup", "SQL", "Twilio"],
         "tags": [
             "code"
@@ -295,6 +302,22 @@ entries = [
         "tags": [
             "work"
         ]
+    },
+    {
+        "organization": "General Assembly",
+        "url": "https://generalassemb.ly/",
+        "date": "9-1-2018",
+        "end_date": "5-1-2020",
+        "position": "Instructional Associate",
+        "synopsis": "Training students in data science methods, concepts and technologies, including: bash, python, data mining, supervised and unsupervised learning techniques, model building, forecasting, SQL, AWS and NLP.",
+        "tags": ["work"]
+    },
+    {
+        "title": "G Sheets Tools",
+        "url": "https://github.com/afriedman412/g-sheets-tools",
+        "date": "9-1-2020",
+        "synopsis": "A simple Python wrapper for the Google Sheets API, for easy investigation and sharing of .csv-like data without the complications of import and exporting.",
+        "tags": ["code"]
     }
 
 ]
