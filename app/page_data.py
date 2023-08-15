@@ -1,24 +1,5 @@
 entries = [
     {
-        "title": "Baltimore's Crime Numbers Game",
-        "publication": "The Real News",
-        "url": "https://therealnews.com/baltimore-police-spending-violent-crime-statistics",
-        "date": "6-13-2023",
-        "collaborators": [
-            {
-                "name": "Google/Medill Data-Driven Reporting Project",
-                "url": "https://datadrivenreporting.medill.northwestern.edu/"
-            }
-        ],
-        "synopsis": "The first in an ongoing series of analyses of 30 years of crime in Baltimore, based on the analysis of crime statistics obtained from the Baltimore Police Department.",
-        "role": [
-            ""
-        ],
-        "tags": [
-            "data journalism"
-        ]
-    },
-    {
         "organization": "Google/Medill Data-Driven Reporting Project",
         "url": "https://datadrivenreporting.medill.northwestern.edu/",
         "date": "6-1-2022",
@@ -31,6 +12,9 @@ entries = [
         <li>Part 4: An Evaluation of City Budget and Health Metrics
         </ul>
         """,
+        "skills": [
+            "Data Visualization", "Statistics", "Data Journalism", "Visual Storytelling"
+        ],
         "tags": [
             "work"
         ]
@@ -50,7 +34,7 @@ entries = [
         "synopsis": "Analysis of 5 years of municipal budgets from over 400 locations to determine whether the 2020 George Floyd protests led to police being defunded across the country. They did not.",
         "tags": [
             "writing",
-            "data journalism"
+            "data"
         ]
     },
     {
@@ -66,9 +50,8 @@ entries = [
         ],
         "synopsis": "We tracked the rate of use of “officer-involved” and similar exonerative language across 20 years of American reporting on police violence. I was responsible for data acquistion and analysis, which involved TKTKTK",
         "tags": [
-            "writing",
             "data",
-            "data journalism"
+            "writing"
         ]
     },
     {
@@ -85,8 +68,7 @@ entries = [
         "synopsis": "Data analysis of 473 cities nationwide finds that spending on police takes up almost one-third of municipal budgets, independently of local crime rates—with poorer cities spending a higher share.",
         "tags": [
             "writing",
-            "data",
-            "data journalism"
+            "data"
         ]
     },
     {
@@ -99,10 +81,11 @@ entries = [
                 "url": "https://justjournalism.org/"
             }
         ],
-        "synopsis": "A self-contained Python package for quote identification, attribution and resolution, built on SpaCy and Textacy.",
-        "tools": "SpaCy, TBD",
+        "synopsis": "A self-contained Python package for quote identification, attribution and resolution, built on <a href='https://spacy.io/'>SpaCy</a> and <a href='https://textacy.readthedocs.io/'>Textacy</a>.",
+        "skills": [
+            "SpaCy, Named Entity Recognition, Numpy, Regular Expressions"
+            ],
         "tags": [
-            "data",
             "code"
         ]
     },
@@ -122,10 +105,10 @@ entries = [
             }
 
         ],
-        "synopsis": "Cross-referenced arrest data with demographics to demonstrate bias in enforcement of cannabis prohibition, and to argue that decriminalization is not sufficient.",
+        "synopsis": "After Baltimore decriminalized the possession of an amount of cannabis, we investigated how the city's police were handling the new policies. By cross-referencing census records with data acquired from Baltimore Police, I was able to demonstrate racial bias in the enforcement of the new standards.",
         "tags": [
             "data",
-            "data journalism"
+            "writing"
         ]
     },
     {
@@ -224,15 +207,16 @@ entries = [
         "position": "Data Scientist (Contract)",
         "date": "1-1-2023",
         "end_date": "6-1-2023",
-        "synopsis": """In partnership with the <a href='https://wagner.nyu.edu/'>NYU Wagner School of Public Service</a>, I worked with graduate students to investigate American newspapers' reliance on police sources when reporting on crime, and how that affected coverage of both crime and police. While the students conducted an in-depth analysis of a representative 300 article sample, I used a programmatic approach to analyze the full 100,000 article data set.
-        <br><br>Key responsibilities:
-        <ul>
-        <li>Development of <a href='https://github.com/afriedman412/sayswho'>a standalone Python package for quote identification, attribution and resolution</a>
-        <li>Acquisition and processing of 100,000 articles
-        <li>Lexis/Nexis query optimization to minimize irrelevant or off-topic articles
-        <li>Topic modeling to verify the fidelity of the students' sub-sample
-        </ul>
-        """,
+        "synopsis": """In partnership with the <a href='https://wagner.nyu.edu/'>NYU Wagner School of Public Service</a>, I worked with graduate students to investigate American newspapers' reliance on police sources when reporting on crime, and how that affected coverage of both crime and police. While the students conducted an in-depth analysis of a representative 300 article sample, I used a programmatic approach to analyze the full 100,000 article data set.""",
+        "responsibilities": [
+            "Development of <a href='https://github.com/afriedman412/sayswho'>a standalone Python package for quote identification, attribution and resolution",
+            "Acquisition and processing of 100,000 articles",
+            "Lexis/Nexis query optimization to minimize irrelevant or off-topic articles",
+            "Topic modeling to verify the fidelity of the students' sub-sample"
+        ],
+        "skills": [
+            "SpaCy", "PyTorch", "BERT", "BERTopic", "Scikit-Learn", "SQL", "Pandas"
+        ],
         "tags": [
             "work"
         ]
@@ -243,14 +227,16 @@ entries = [
         "position": "Data Scientist",
         "date": "11-1-2018",
         "end_date": "8-1-2022",
-        "synopsis": """Chatdesk is a Series A company backed by leading Silicon Valley investors like Menlo Ventures, Susa Ventures and Slow Ventures in the customer service space, whose customers include leading brands like Grubhub, BarkBox, Thinx, and OLAPLEX.
-        <br><br>Key Responsibilities:
-        <ul>
-        <li>Deployed message classification model for 1 million weekly messages with 99.5% accuracy
-        <li>Implemented Named Entity Recognition to increase flexibility of cleaning code
-        <li>Developed and maintained code base for cleaning and standardization of incoming messages for downstream processing for 100+ companies in 10+ languages, from diverse sources (Zendesk, Salesforce, Intercom, Facebook, Instagram)
-        <li>Attended client meetings for technical integration and conduct data analysis to help our sales team
-        """,
+        "synopsis": """Chatdesk is a Series A company backed by leading Silicon Valley investors like Menlo Ventures, Susa Ventures and Slow Ventures in the customer service space, whose customers include leading brands like Grubhub, BarkBox, Thinx, and OLAPLEX.""",
+        "responsibilities": [
+            "Deployed message classification model for 1 million weekly messages with 99.5% accuracy",
+            "Implemented Named Entity Recognition to increase flexibility of cleaning code",
+            "Developed and maintained code base for cleaning and standardization of incoming messages for downstream processing for 100+ companies in 10+ languages, from diverse sources (Zendesk, Salesforce, Intercom, Facebook, Instagram)",
+            "Attended client meetings for technical integration and conduct data analysis to help our sales team"
+        ],
+        "skills": [
+            "PyTorch", "NER", "SpaCy", "Pandas", "Scikit-Learn", "Google Cloud", "Azure", "AWS", "Flask", "FastAPI", "Poetry", "Docker", "Twilio", "Bitbucket"
+        ],
         "tags": [
             "work"
         ]
@@ -260,10 +246,9 @@ entries = [
         "url": "http://rcg2023-env.eba-ad9re3sf.us-east-2.elasticbeanstalk.com/",
         "date": "10-1-2022",
         "synopsis": "Automated data collection and visualization of Spotify’s influential Rap Caviar playlist, tracking how the gender balance changes over time.",
-        "tools": ["SQL", "AWS", "ElasticBeanstalk", "Plotly", "Pandas"],
+        "skills": ["SQL", "AWS", "ElasticBeanstalk", "Plotly", "Pandas"],
         "tags": [
-            "code",
-            "data"
+            "code"
         ]
     },
     {
@@ -272,10 +257,9 @@ entries = [
         "url": "https://brooklynevictiondefense.org/",
         "date": "6-1-2020",
         "synopsis": "I built a web scraper to help Brooklyn Eviction Defense better protect tenants from eviction. After Covid shut down city courts for several months, the city set up new courts to handle the backlog in housing court cases. These new courts often struggled to contact defendants about updates in their cases, especially given the pandemic upheaval. BED sought to find tenants at risk of missing court dates, and the scraper allowed the organization to do so in minutes instead of hours.",
-        "tools": ["Selenium", "BeautifulSoup", "SQL"],
+        "skills": ["Selenium", "BeautifulSoup", "SQL"],
         "tags": [
-            "code",
-            "data"
+            "code"
         ]
     },
     {
@@ -284,32 +268,32 @@ entries = [
         "url": "https://brooklynevictiondefense.org/",
         "date": "6-1-2020",
         "synopsis": "I set up a Twilio-based phone tree to make it easier for less internet-inclined tenants to contact Brooklyn Eviction Defense if they needed the organzition's help. The tree included useful information in both English and Spanish, transcription capabilities which populated intake documents, and a quick response line that automatically texted members in case of emergencies.",
-        "tools": ["Twilio"],
+        "skills": ["Twilio", "SQL", "AWS"],
         "tags": [
-            "code",
-            "data"
+            "code"
         ]
     },
     {
         "title": "Congressional Financial Disclosure Scraper",
-        "organization": "Sludge",
+        "organization": "<em>Sludge</em>",
         "date": "6-1-2019",
-        "synopsis": "For money in politics site Sludge, I developed and maintain an app that queries both the House and Senate on the hour and downloads any new financial disclosure forms.",
-        "tools": ["Selenium", "BeautifulSoup"],
+        "synopsis": "For money in politics site <em>Sludge</em>, I developed and maintain an app that queries both the House and Senate on the hour and downloads any new financial disclosure forms.",
+        "skills": ["Selenium", "BeautifulSoup", "SQL", "Twilio"],
         "tags": [
-            "code",
-            "data"
+            "code"
         ]
     },
     {
-        "organization": "The Real News",
+        "organization": "<em>The Real News</em>",
         "url": "https://www.therealnews.com",
         "date": "8-1-2023",
-        "position": "Data Lead (Contract)",
+        "position": "Developer",
         "synopsis": "Creating a civilian-facing dashboard for local crime statistics as reported to the FBI.",
+        "skills": [
+            "Plotly Dash", "Flask", "AWS", "Elastic Beanstalk"
+        ],
         "tags": [
-            "work",
-            "data"
+            "work"
         ]
     }
 

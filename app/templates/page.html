@@ -1,50 +1,94 @@
-  {% include 'head.html' %}
+{% include 'head.html' %}
 
-    {% if tag == 'home' %}
-        <p><img src="static/images/bio-photo.jpg" /></p>
-    {% else %}
-        {% if tag == 'writing' %}
-            <h1>Selected Writing</h1>
-            {% for e in entries %}
-                <h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
-                <p>
-                    <i>{{ e.publication }}</i><br>
-                    {{ e.date }}<br>
-                    {% if 'collaborators' in e %}
-                        with
-                        {% for c in e.collaborators %}
-                            <a href="{{ c.url }}">{{ c.name }}</a>
-                        {% endfor %}
-                    {% endif %}
-                </p>
-                <p>{{ e.synopsis | safe}}</p>
-                <p>---</p>
-            {% endfor %}
-        {% elif tag == 'work' %}
-            <h1>Work Experience</h1>
-            {% for e in entries %}
-                <h2>{{ e.position }}</a></h2>
-                <p>
-                    <a href="{{ e.url }}">{{ e.organization }}</a><br>
-                    {{ e.date }} to {{ e.end_date if 'end_date' in e else 'present'}}<br>
-                </p>
-                <p>{{ e.synopsis | safe }}</p>
-                <p>---</p>
-            {% endfor %}
-        {% elif tag == 'code' %}
-            <h1>Code</h1>
-            {% for e in entries %}
-                <h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
-                <p>
-                    {% if 'organization' in e %}
-                        {{ e.organization }}<br>
-                    {% endif %}
-                    {{ e.date }}<br>
-                </p>
-                <p>{{ e.synopsis | safe }}</p>
-                <p>---</p>
-            {% endfor %}
-        {% endif %}
+{% macro section_header(header_text) %}
+<hr class="new5">
+    <h1 style="text-align: center;">{{ header_text }}</h1>
+<hr class="new5">
+{% endmacro %}
+
+{% macro skills(e) %}
+{% if 'skills' in e %}
+    <b>Skills:</b> {{ e.skills | join(", ") }}
+{% endif %}
+{% endmacro %}
+
+{% macro responsibilities(e) %}
+{% if 'responsibilities' in e %}
+    <h4>Key responsibilities:</h4>
+    <ul>
+        {% for r in e.responsibilities %}
+        <li>{{ r }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endmacro %}
+
+{% if tag == 'home' %}
+    <p><img src="static/images/bio-photo.jpg" /></p>
+{% else %}
+    {% if tag == 'data' %}
+        {{ section_header("DATA JOURNALISM") }}
+        {% for e in entries %}
+            <h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
+            <p>
+                <i>{{ e.publication }}</i><br>
+                {{ e.date }}<br>
+                {% if 'collaborators' in e %}
+                    with
+                    {% for c in e.collaborators %}
+                        <a href="{{ c.url }}">{{ c.name }}</a>
+                    {% endfor %}
+                {% endif %}
+            </p>
+            <p>{{ e.synopsis | safe}}</p>
+            <hr>
+        {% endfor %}
     {% endif %}
-    </main>
-    {% include 'footer.html' %}
+    {% if tag == 'writing' %}
+        {{ section_header("SELECTED WRITING") }}
+        {% for e in entries %}
+            <h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
+            <p>
+                <i>{{ e.publication }}</i><br>
+                {{ e.date }}<br>
+                {% if 'collaborators' in e %}
+                    with
+                    {% for c in e.collaborators %}
+                        <a href="{{ c.url }}">{{ c.name }}</a>
+                    {% endfor %}
+                {% endif %}
+            </p>
+            <p>{{ e.synopsis | safe}}</p>
+            <hr>
+        {% endfor %}
+    {% elif tag == 'work' %}
+        {{ section_header("WORK EXPERIENCE") }}
+        {% for e in entries %}
+            <h2>{{ e.position }}</a></h2>
+            <p>
+                <a href="{{ e.url }}">{{ e.organization | safe }}</a><br>
+                {{ e.date }} to {{ e.end_date if 'end_date' in e else 'present'}}<br>
+            </p>
+            <p>{{ e.synopsis | safe }}</p>
+            {{ responsibilities(e )}}
+            {{ skills(e) }}
+            <hr>
+        {% endfor %}
+    {% elif tag == 'code' %}
+        {{ section_header("CODING PROJECTS") }}
+        {% for e in entries %}
+            <h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
+            <p>
+                {% if 'organization' in e %}
+                    {{ e.organization | safe }}<br>
+                {% endif %}
+                {{ e.date }}<br>
+            </p>
+            <p>{{ e.synopsis | safe }}</p>
+            {{ skills(e) }}
+            <hr>
+        {% endfor %}
+    {% endif %}
+{% endif %}
+</main>
+{% include 'footer.html' %}
