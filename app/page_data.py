@@ -318,6 +318,13 @@ entries = [
         "date": "9-1-2020",
         "synopsis": "A simple Python wrapper for the Google Sheets API, for easy investigation and sharing of .csv-like data without the complications of import and exporting.",
         "tags": ["code"]
+    },
+    {
+        "title": "LatLong",
+        "url": "http://latlong.dnpdata.com",
+        "date": "8-31-2023",
+        "synopsis": "A web app for getting latitude and longitude coordinates. Somebody was looking for one and there wasn't one, so I built one.",
+        "tags": ["code"]
     }
 
 ]
@@ -336,12 +343,12 @@ content = {
     ],
     "songs": [
         {
-            'title': "Blood Capsules", "artist":"The Mountain Goats"
+            'title': "we should have made otherground a thing", "artist":"Open Mike Eagle"
         },
         {
-            "title": "Johnny Dang", "artist": "That Mexican OT f/ dRODI and Paul Wall"
+            "title": "Bowtie", "artist": "Outkast, Sleepy Brown and Jazze Pha"
         },
         {
-            "title": "Wtf U Mean", "artist": "HAARPER f/ Freddie Dredd"
+            "title": "Cola", "artist": "Lil Weirdo"
         }
     ]}
