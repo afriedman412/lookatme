@@ -324,6 +324,9 @@ entries = [
         "url": "http://latlong.dnpdata.com",
         "date": "8-31-2023",
         "synopsis": "A web app for getting latitude and longitude coordinates. Somebody was looking for one and there wasn't one, so I built one.",
+        "skills": [
+            "Flask", "JavaScript"
+        ],
         "tags": ["code"]
     }
 
