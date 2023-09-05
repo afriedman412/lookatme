@@ -243,7 +243,7 @@ entries = [
     },
     {
         "title": "Rap Caviar Gender Balance Tracker",
-        "url": "http://rcg2023-env.eba-ad9re3sf.us-east-2.elasticbeanstalk.com/",
+        "url": "http://rcg.dnpdata.com/",
         "date": "10-1-2022",
         "synopsis": "Automated data collection and visualization of Spotify’s influential Rap Caviar playlist, tracking how the gender balance changes over time.",
         "skills": ["SQL", "AWS", "ElasticBeanstalk", "Plotly", "Pandas"],
@@ -335,13 +335,13 @@ entries = [
 content = {
     "books":[
         {
+            "title": "Remainder", "author": "Tom McCarthy"
+        },
+        {
             "title": "Dhalgren", "author": "Samuel R. Delany"
         },
         {
             "title": "Ministry For The Future", "author": "Kim Stanley Robinson"
-        },
-        {
-            "title": "Agency", "author": "William Gibson"
         }
     ],
     "songs": [
