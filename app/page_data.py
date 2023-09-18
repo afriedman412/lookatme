@@ -335,23 +335,23 @@ entries = [
 content = {
     "books":[
         {
+            "title": "The Difference Engine", "author": "William Gibson"
+        },
+        {
             "title": "Remainder", "author": "Tom McCarthy"
         },
         {
-            "title": "Dhalgren", "author": "Samuel R. Delany"
-        },
-        {
-            "title": "Ministry For The Future", "author": "Kim Stanley Robinson"
+            "title": "Wolf In White Van", "author": "John Darnielle"
         }
     ],
     "songs": [
         {
+            "title": "Incredible Feeling", "artist": "Slim Thug f/ Jazze Pha"
+        },
+        {
+            "title": "Hot Like A Melting Pot", "artist": "Dennis Brown"
+        },
+        {
             'title': "we should have made otherground a thing", "artist":"Open Mike Eagle"
-        },
-        {
-            "title": "Bowtie", "artist": "Outkast, Sleepy Brown and Jazze Pha"
-        },
-        {
-            "title": "Cola", "artist": "Lil Weirdo"
         }
     ]}
