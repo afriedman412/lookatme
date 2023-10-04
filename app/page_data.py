@@ -325,20 +325,31 @@ entries = [
         "date": "8-31-2023",
         "synopsis": "A web app for getting latitude and longitude coordinates. Somebody was looking for one and there wasn't one, so I built one.",
         "skills": [
-            "Flask", "JavaScript"
+            "Flask", "JavaScript", "CSS", "Jinja2"
         ],
         "tags": ["code"]
-    }
+    },
+    {
+        "title": "8872 Data Extractor",
+        "url": "https://extract-8872-bf8fc2157378.herokuapp.com/",
+        "date": "9-22-2023",
+        "synopsis": "Extracts all contributions and expenses from IRS Form 8872, which tracks financial disclosure for Political Action Committees (PACs)",
+        "skills": [
+            "Flask", "JavaScript", "CSS", "Jinja2"
+        ],
+        "tags": ["code"]
+    },
+
 
 ]
 
 content = {
     "books":[
         {
-            "title": "The Difference Engine", "author": "William Gibson"
+            "title": "The Dispossessed", "author": "Ursula K. Le Guin"
         },
         {
-            "title": "Remainder", "author": "Tom McCarthy"
+            "title": "The Difference Engine", "author": "William Gibson"
         },
         {
             "title": "Wolf In White Van", "author": "John Darnielle"
@@ -346,12 +357,12 @@ content = {
     ],
     "songs": [
         {
-            "title": "Incredible Feeling", "artist": "Slim Thug f/ Jazze Pha"
+            "title": "Windbreaker", "artist": "FIELDED f/ billy woods"
         },
         {
-            "title": "Hot Like A Melting Pot", "artist": "Dennis Brown"
+            "title": "You Ain't Know", "artist": "Lil Wayne and Birdman"
         },
         {
-            'title': "we should have made otherground a thing", "artist":"Open Mike Eagle"
+            'title': "Mr. Jin", "artist" : "Makaya McCraven"
         }
     ]}
