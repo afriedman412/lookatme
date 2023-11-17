@@ -42,6 +42,7 @@
     --spacer-2: calc(var(--spacer) * 1.5);
     --spacer-3: calc(var(--spacer) * 3)
 }
+
 /* 
 @media(prefers-color-scheme: dark) {
     :root {
@@ -70,9 +71,19 @@ body {
     -ms-text-size-adjust: 100%
 }
 
-.header {
-    color: var(--dark-green);
+hr.sectioner {
+    border: 3px solid var(--dark-green);
+    border-radius: 5px;
+}
+
+h1.header {
     text-decoration: none;
+    text-align: center;
+}
+
+a.header {
+    text-decoration: none;
+    text-align: center;
 }
 
 a {
@@ -96,19 +107,25 @@ img {
 }
 
 .image-container {
-    white-space: nowrap; /* Prevent line breaks between images */
+    white-space: nowrap;
+    /* Prevent line breaks between images */
 }
 
 .image-container img {
     display: inline-block;
-    vertical-align: top; /* Adjust vertical alignment if needed */
-    margin-right: 10px; /* Add some spacing between images */
+    vertical-align: top;
+    /* Adjust vertical alignment if needed */
+    margin-right: 10px;
+    /* Add some spacing between images */
 }
 
 .image-crop-container {
-    height: 500px; /* Set the desired height of the cropped area */
-    overflow: hidden; /* Hide the content that overflows the container */
-    position: relative; /* Establish a positioning context for the child elements */
+    height: 500px;
+    /* Set the desired height of the cropped area */
+    overflow: hidden;
+    /* Hide the content that overflows the container */
+    position: relative;
+    /* Establish a positioning context for the child elements */
 }
 
 
@@ -119,7 +136,7 @@ img {
 hr.new5 {
     border: 3px solid var(--dark-green);
     border-radius: 5px;
-  }
+}
 
 table {
     margin-bottom: 1rem;

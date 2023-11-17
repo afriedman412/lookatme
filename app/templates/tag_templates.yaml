@@ -1,0 +1,42 @@
+data:
+  parts:
+    - title
+    - <p>
+    - publication
+    - date
+    - <br>
+    - collaborators
+    - </p>
+    - synopsis
+
+writing:
+  parts:
+    - title
+    - <p>
+    - publication
+    - date
+    - <br>
+    - collaborators
+    - </p>
+    - synopsis
+
+code:
+  parts:
+    - title
+    - <p>
+    - organization
+    - date
+    - </p>
+    - synopsis
+    - skills
+
+work:
+  parts:
+    - position
+    - <p>
+    - workdate
+    - organization
+    - </p>
+    - synopsis
+    - responsibilities
+    - skills

@@ -75,7 +75,7 @@ entries = [
         "title": "SaysWho",
         "url": "https://github.com/afriedman412/sayswho",
         "date": "4-1-2023",
-        "colaborators": [
+        "collaborators": [
             {
                 "name": "Center for Just Journalism",
                 "url": "https://justjournalism.org/"

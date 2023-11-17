@@ -1,0 +1,53 @@
+{# parts.jinja #}
+
+{% macro skills(e) %}
+{% if 'skills' in e %}
+<span class="skill"><b>SKILLS:</b></span><br> {{ e.skills | join(", ") }}
+{% endif %}
+{% endmacro %}
+
+{% macro responsibilities(e) %}
+{% if 'responsibilities' in e %}
+    <h4 class="skill">KEY RESPONSIBILITIES:</h4>
+    <ul>
+        {% for r in e.responsibilities %}
+        <li>{{ r | safe }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endmacro %}
+
+{% macro workdate(e) %}
+{{ e.date }} to {{ e.end_date if 'end_date' in e else 'present'}}<br>
+{% endmacro %}
+
+{% macro publication(e)%}
+<i>{{ e.publication }}</i><br>
+{% endmacro %}
+
+{% macro collaborators(e) %}
+{% if 'collaborators' in e %}
+    with
+    {% for c in e.collaborators %}
+        <a href="{{ c.url }}">{{ c.name }}</a>
+    {% endfor %}
+{% endif %}
+{% endmacro %}
+
+{% macro title(e) %}
+<h2><a href="{{ e.url }}">{{ e.title }}</a></h2>
+{% endmacro %}
+
+{% macro synopsis(e) %}
+<p>{{ e.synopsis | safe}}</p>
+{% endmacro %}
+
+{% macro organization(e) %}
+{% if 'organization' in e %}
+    <a href="{{ e.url }}">{{ e.organization | safe }}<br></a>
+{% endif %}
+{% endmacro %}
+
+{% macro position(e) %}
+<h2>{{ e.position }}</a></h2>
+{% endmacro %}

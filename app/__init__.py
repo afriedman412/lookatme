@@ -1,8 +1,7 @@
 from flask import Flask
+from .routes import home, page
 
 app = Flask(__name__)
-
-from .routes import home, page
 
 app.route("/")(home)
 app.route("/<tag>")(page)
