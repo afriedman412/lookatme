@@ -1,6 +1,7 @@
-from flask import render_template
+from flask import render_template, g
 from datetime import datetime as dt
 import yaml
+import os
 
 def get_sort_date(entry):
    if 'work' in entry['tags'] and 'end_date' not in entry:
@@ -20,9 +21,8 @@ def page(tag):
       key=lambda e: get_sort_date(e), reverse=True
       )
 
-   tag_templates = yaml.safe_load(open("./app/templates/tag_templates.yaml"))
-   if tag in tag_templates:
-      parts_list = tag_templates.get(tag).get('parts')
+   if tag in g.tag_templates:
+      parts_list = g.tag_templates.get(tag).get('parts')
       return render_template(
          'page.html',
          parts_list=parts_list,
