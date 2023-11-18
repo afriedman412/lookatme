@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      {{ g.settings['title'] }}
+    </title>
+
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='styles/styles.css') }}">
+
+  </head>
+
+  <body>
+
+    <div class="container content">
+      <main>
+        <h1><a class="header" href="/">{{ g.settings['headline'] }}</a></h1>
+        <p>
+          <div class="image-container">
+            {% for site, url in g.settings['socials'].items() %}
+            <a href="{{url}}"><img
+                src="{{ url_for('static', filename='images/{}.svg'.format(site))}}"
+                style="width: 30px;"></a>
+            {% endfor %}
+          </div>
+          <p>
+            <em>{{ g.settings['email'] }}</em>
+          </p>
+
+          {% set links = [] %}
+          {% for tag in g.tag_templates|sort(attribute="priority")
+          %}
+          {% if 'endpoint' in g.tag_templates[tag] %}
+          {% set link = '<a href="/' + g.tag_templates[tag].endpoint + '">' + tag.capitalize() + '</a>'
+          %}
+          {% else %}
+          {% set link = '<a href="/' + tag + '">' + tag.capitalize() + '</a>' %}
+          {% endif %}
+          {% set _ = links.append(link) %}
+          {% endfor %}
+
+          {{ links | join(" • ") | safe}}
+        </p>

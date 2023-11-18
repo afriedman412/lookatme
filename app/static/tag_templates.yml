@@ -1,34 +1,5 @@
-data:
-  parts:
-    - title
-    - <p>
-    - publication
-    - date
-    - <br>
-    - collaborators
-    - </p>
-    - synopsis
-
-writing:
-  parts:
-    - title
-    - <p>
-    - publication
-    - date
-    - <br>
-    - collaborators
-    - </p>
-    - synopsis
-
-code:
-  parts:
-    - title
-    - <p>
-    - organization
-    - date
-    - </p>
-    - synopsis
-    - skills
+home:
+  endpoint: ""
 
 work:
   parts:
@@ -40,3 +11,39 @@ work:
     - synopsis
     - responsibilities
     - skills
+
+code:
+  parts:
+    - title
+    - <p>
+    - organization
+    - date
+    - </p>
+    - synopsis
+    - skills
+
+data:
+  header-text: Data Journalism
+  parts:
+    - title
+    - <p>
+    - publication
+    - pubdate
+    - collaborators
+    - </p>
+    - synopsis
+
+writing:
+  parts:
+    - title
+    - <p>
+    - publication
+    - pubdate
+    - collaborators
+    - </p>
+    - synopsis
+
+
+
+
+

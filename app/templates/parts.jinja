@@ -21,6 +21,10 @@
 {{ e.date }} to {{ e.end_date if 'end_date' in e else 'present'}}<br>
 {% endmacro %}
 
+{% macro pubdate(e) %}
+{{ e.date }}<br>
+{% endmacro %}
+
 {% macro publication(e)%}
 <i>{{ e.publication }}</i><br>
 {% endmacro %}
@@ -28,10 +32,13 @@
 {% macro collaborators(e) %}
 {% if 'collaborators' in e %}
     with
+    {% set collaborators_ = [] %}
     {% for c in e.collaborators %}
-        <a href="{{ c.url }}">{{ c.name }}</a>
+    {% set collab = '<a href="' + c.url + '">' + c.name + '</a>' %}
+    {% set _ = collaborators_.append(collab) %}
     {% endfor %}
 {% endif %}
+{{ collaborators_ | join(", ") | safe }}
 {% endmacro %}
 
 {% macro title(e) %}

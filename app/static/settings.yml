@@ -1,0 +1,24 @@
+title: Andrew Friedman's Portfolio
+headline: Andrew Friedman
+email: afriedman412 [at] gmail [dot] com
+image: IMG_6980_alm_edit.jpg
+
+socials:
+  twitter: http://twitter.com/trent_holograms
+  linkedin: http://linkedin.com/in/afriedman412
+  github: http://github.com/afriedman412
+
+bio: >-
+  My name is Andrew, but most people call me Andy.<br><br>
+
+  I am a data scientist, coder, writer and talker. I wear a lot of hats and like to learn through doing.<br><br>
+  
+  I believe the best data is rare data, and I am particularly interested in data acquisition from difficult sources.<br><br>
+  
+  I used to DJ a lot. I am still technically signed to Tommy Boy Records.
+  Before that, I did genomic research at NYU.
+
+include: more_bio.html
+
+footer: © 2023 DNP Data
+

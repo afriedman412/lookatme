@@ -1,0 +1,16 @@
+
+{% include 'base/head.html' %}
+
+{% import 'macros.jinja' as macros %}
+
+{{ macros.section_header('ABOUT') }}
+<div class="image-crop-container">
+  <img style="width: 65%; margin: auto;"
+    src="{{ url_for('static', filename='images/{}'.format(g.settings['image']))}}">
+</div>
+
+{{ g.settings['bio'] | safe }}
+
+{% include g.settings["include"] %}
+
+{% include 'base/footer.html' %}

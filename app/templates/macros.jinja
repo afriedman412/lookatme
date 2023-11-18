@@ -2,11 +2,12 @@
 {% import 'parts.jinja' as parts %}
 
 {% macro section_header(header_text) %}
-<hr class="sectioner">
-<h1 class="header">{{ header_text.upper() }}</h1>
-<hr class="sectioner">
+<div class="sectioner">
+    <hr>
+    <h1>{{ header_text.upper() }}</h1>
+    <hr>
+</div>
 {% endmacro %}
-
 
 {% macro tag_container(parts_list, header_text, entries) %}
 {{ section_header(header_text) }}
@@ -20,6 +21,8 @@
             {{ e[m] }}
         {% endif %}
     {% endfor %}
+    {% if not loop.last %}
     <hr>
+    {% endif %}
 {% endfor %}
 {% endmacro %}

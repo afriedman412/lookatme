@@ -1,0 +1,364 @@
+- date: 6-1-2022
+  organization: Google/Medill Data-Driven Reporting Project
+  position: Data Lead
+  skills:
+  - Data Visualization
+  - Statistics
+  - Data Journalism
+  - Visual Storytelling
+  synopsis: "Member of a team awarded a grant from the Google/Medill Data-Driven Reporting\
+    \ Project to study 30 years of detailed crime statistics obtained from the Baltimore\
+    \ Police Department.<br><br>Results of the study are being published as a multipart\
+    \ series in <i><a href='http://therealnews.com'>The Real News</a></i>:\n     \
+    \   <ul>\n        <li>Part 1: <a href='https://therealnews.com/baltimore-police-spending-violent-crime-statistics'>Baltimore's\
+    \ Crime Numbers Game</a>\n        <li>Part 2: An in-depth look at Drug Arrests\
+    \ and Homicide Numbers\n        <li>Part 3: An Audit of Baltimore City\u2019s\
+    \ Data Integrity\n        <li>Part 4: An Evaluation of City Budget and Health\
+    \ Metrics\n        </ul>\n        "
+  tags:
+  - work
+  url: https://datadrivenreporting.medill.northwestern.edu/
+
+- collaborators:
+  - name: Mason Youngblood
+    url: https://masonyoungblood.com/
+  date: 4-18-2022
+  publication: The Real News
+  synopsis: Analysis of 5 years of municipal budgets from over 400 locations to determine
+    whether the 2020 George Floyd protests led to police being defunded across the
+    country. They did not.
+  tags:
+  - writing
+  - data
+  title: Nobody Defunded The Police
+  url: https://therealnews.com/nobody-defunded-the-police-a-study
+
+- collaborators:
+  - name: Brandon Soderberg
+    url: https://twitter.com/notrivia
+  date: 1-13-2022
+  publication: The Huffington Post
+  synopsis: "We tracked the rate of use of \u201Cofficer-involved\u201D and similar\
+    \ exonerative language across 20 years of American reporting on police violence."
+  tags:
+  - data
+  - writing
+  title: "Major Media Outlets Can\u2019t Stop Describing Police Violence As \u2018\
+    Officer-Involved\u2019 Incidents"
+  url: https://www.huffpost.com/entry/police-violence-officer-involved-analysis-lapd_n_61df310fe4b0a26702885448
+
+- collaborators:
+  - name: Mason Youngblood
+    url: https://masonyoungblood.com/
+  date: 6-26-2020
+  publication: Sludge
+  synopsis: "Data analysis of 473 cities nationwide finds that spending on police\
+    \ takes up almost one-third of municipal budgets, independently of local crime\
+    \ rates\u2014with poorer cities spending a higher share."
+  tags:
+  - writing
+  - data
+  title: Poorer Cities Spend More of Budget on Police, Even Where Crime Is Lower
+  url: https://readsludge.com/2020/06/26/poorer-cities-spend-more-of-budget-on-police-even-where-crime-is-lower/
+
+- collaborators:
+  - name: Center for Just Journalism
+    url: https://justjournalism.org/
+  date: 4-1-2023
+  skills:
+  - SpaCy, Named Entity Recognition, Numpy, Regular Expressions
+  synopsis: A self-contained Python package for quote identification, attribution
+    and resolution, built on <a href='https://spacy.io/'>SpaCy</a> and <a href='https://textacy.readthedocs.io/'>Textacy</a>.
+  tags:
+  - code
+  title: SaysWho
+  url: https://github.com/afriedman412/sayswho
+
+- collaborators:
+  - name: Brandon Soderberg
+    url: https://twitter.com/notrivia
+  - name: Ethan McLeod
+    url: https://twitter.com/ethanfmcleod
+  date: 12-28-2018
+  publication: Baltimore Fishbowl
+  synopsis: After Baltimore decriminalized the possession of an amount of cannabis,
+    we investigated how the city's police were handling the new policies. By cross-referencing
+    census records with data acquired from Baltimore Police, I was able to demonstrate
+    racial bias in the enforcement of the new standards.<br><br>Baltimore State's
+    Attorney Marilyn Mosby cited our research when <a href='https://www.npr.org/2019/02/03/690975390/baltimore-states-attorney-will-no-longer-prosecute-marijuana-possession-cases'>she
+    announced she would no longer prosecute marijuana possession charges in 2019.</a>
+  tags:
+  - data
+  - writing
+  title: Structural Racism and Cannabis
+  url: https://baltimorefishbowl.com/stories/structural-racism-and-cannabis-black-baltimoreans-still-disproportionately-arrested-for-weed-after-decriminalization/
+
+- date: 2-10-2016
+  publication: FACT Magazine
+  synopsis: A deep dive into the history, politics, state and future of clean versions
+    of rap songs.
+  tags:
+  - writing
+  title: "Excuse My French: The dirty secrets of hip-hop\u2019s clean versions"
+  url: https://www.factmag.com/2016/02/10/hip-hop-clean-versions/
+
+- date: 8-3-2016
+  publication: FACT Magazine
+  synopsis: A look at the unique world of Icelandic hip-hop, which is surprisingly
+    large for a country with fewer than 500,000 people.
+  tags:
+  - writing
+  title: "Straight outta Eyjafjallaj\xF6kull: Iceland\u2019s rap scene is ready to\
+    \ explode"
+  url: https://www.factmag.com/2016/08/03/iceland-hip-hop-scene-ready-to-explode-ulfur-ulfur-gisli-palmi/
+
+- date: 3-3-2015
+  publication: FACT Magazine
+  synopsis: In which St. Petersburg rappers find their niche via a detour through
+    EDM.
+  tags:
+  - writing
+  title: 'Putin Work: How Russia fell in love with trap rap'
+  url: https://www.factmag.com/2015/03/03/putin-work-how-russia-fell-in-love-with-trap-rap/
+
+- date: 2-7-2017
+  publication: FACT Magazine
+  synopsis: Resurrecting a dead medium with new factories, deadstock hunts, collectors
+    and EPA guidelines.
+  tags:
+  - writing
+  title: "The cassette revival needs blank tapes \u2013 meet the hoarders coming to\
+    \ the rescue"
+  url: https://www.factmag.com/2017/02/07/blank-tapes-collectors-cassette-revival/
+  
+- date: 3-19-2016
+  publication: FACT Magazine
+  synopsis: An interview with computer programmer and blues guitarist Alex Alekperov,
+    who spent the 80's operating Baku's party-approved record shop.
+  tags:
+  - writing
+  title: I ran the official record store of Soviet Azerbaijan
+  url: https://www.factmag.com/2016/03/19/i-ran-the-official-record-store-soviet-azerbaijan/
+  
+- date: 10-6-2015
+  publication: FACT Magazine
+  synopsis: A long chat with Houston rap legend Paul Wall.
+  tags:
+  - writing
+  title: "Still Sippin\u2019: Houston\u2019s Paul Wall talks Actavis, addiction and\
+    \ Islam"
+  url: https://www.factmag.com/2015/10/06/paul-wall-interview/
+
+- date: 7-2-2015
+  publication: Vice
+  synopsis: An argument that streaming media is changing the speed of time, based
+    in some real physics.
+  tags:
+  - writing
+  title: Pop Culture Is Warping Our Perception of Space-Time
+  url: https://www.vice.com/en/article/exqx9j/full-house-quantum-physics-062
+
+- date: 2-12-2015
+  publication: Vice
+  synopsis: After the US Little League champs lost their title over a technicality,
+    a chat with Chicago rapper and youth baseball alum The Boy Illinois about baseball
+    and race on the south side of the city.
+  tags:
+  - writing
+  title: What Little League Baseball Means In Chicago
+  url: https://www.vice.com/en/article/3d9mq9/what-little-league-baseball-means-in-chicago
+
+- date: 7-14-2014
+  publication: Vice
+  synopsis: An interview with hip-hop legend DJ Premier.
+  tags:
+  - writing
+  title: DJ Premier Talks Kanye, Disclosure, and That One Time He Walked in on Biggie
+    Eating Fried Chicken in His Boxers
+  url: https://www.vice.com/en/article/r399br/dj-premier-interview-2014
+  
+- date: 1-1-2023
+  end_date: 6-1-2023
+  organization: Center for Just Journalism
+  position: Data Scientist (Contract)
+  responsibilities:
+  - Development of <a href='https://github.com/afriedman412/sayswho'>a standalone
+    Python package</a> for quote identification, attribution and resolution
+  - Acquisition and processing of 100,000 articles
+  - Lexis/Nexis query optimization to minimize irrelevant or off-topic articles
+  - Topic modeling to verify the fidelity of the students' sub-sample
+  skills:
+  - SpaCy
+  - PyTorch
+  - BERT
+  - BERTopic
+  - Scikit-Learn
+  - SQL
+  - Pandas
+  synopsis: In partnership with the <a href='https://wagner.nyu.edu/'>NYU Wagner School
+    of Public Service</a>, I worked with graduate students to investigate American
+    newspapers' reliance on police sources when reporting on crime, and how that affected
+    coverage of both crime and police. While the students conducted an in-depth analysis
+    of a representative 300 article sample, I used a programmatic approach to analyze
+    the full 100,000 article data set.
+  tags:
+  - work
+  url: https://justjournalism.org/
+- date: 11-1-2018
+  end_date: 8-1-2022
+  organization: Chatdesk
+  position: Data Scientist
+  responsibilities:
+  - Deployed message classification model for 1 million weekly messages with 99.5%
+    accuracy
+  - Implemented Named Entity Recognition to increase flexibility of cleaning code
+  - Developed and maintained code base for cleaning and standardization of incoming
+    messages for downstream processing for 100+ companies in 10+ languages, from diverse
+    sources (Zendesk, Salesforce, Intercom, Facebook, Instagram)
+  - Attended client meetings for technical integration and conduct data analysis to
+    help our sales team
+  skills:
+  - PyTorch
+  - NER
+  - SpaCy
+  - Pandas
+  - Scikit-Learn
+  - Google Cloud
+  - Azure
+  - AWS
+  - Flask
+  - FastAPI
+  - Poetry
+  - Docker
+  - Twilio
+  - Bitbucket
+  synopsis: Chatdesk is a Series A company backed by leading Silicon Valley investors
+    like Menlo Ventures, Susa Ventures and Slow Ventures in the customer service space,
+    whose customers include leading brands like Grubhub, BarkBox, Thinx, and OLAPLEX.
+  tags:
+  - work
+  url: https://www.chatdesk.com/
+- date: 10-1-2022
+  skills:
+  - SQL
+  - AWS
+  - ElasticBeanstalk
+  - Plotly
+  - Pandas
+  synopsis: "Automated data collection and visualization of Spotify\u2019s influential\
+    \ Rap Caviar playlist, tracking how the gender balance changes over time."
+  tags:
+  - code
+  title: Rap Caviar Gender Balance Tracker
+  url: http://rcg.dnpdata.com/
+- date: 6-1-2020
+  organization: Brooklyn Eviction Defense
+  skills:
+  - Selenium
+  - BeautifulSoup
+  - SQL
+  synopsis: I built a web scraper to help <a href='https://brooklynevictiondefense.org/'>Brooklyn
+    Eviction Defense</a> better protect tenants from eviction. After Covid shut down
+    city courts for several months, the city set up new courts to handle the backlog
+    in housing court cases. These new courts often struggled to contact defendants
+    about updates in their cases, especially given the pandemic upheaval. BED sought
+    to find tenants at risk of missing court dates, and the scraper allowed the organization
+    to do so in minutes instead of hours.
+  tags:
+  - code
+  title: Housing Court Data Scraper
+  url: https://brooklynevictiondefense.org/
+- date: 6-1-2020
+  organization: Brooklyn Eviction Defense
+  skills:
+  - Twilio
+  - SQL
+  - AWS
+  synopsis: I set up a Twilio-based phone tree to make it easier for tenants to contact
+    <a href='https://brooklynevictiondefense.org/'>Brooklyn Eviction Defense</a> if
+    they needed the organzition's help. The tree included useful information in both
+    English and Spanish, transcription capabilities which populated intake documents,
+    and a quick response line that automatically texted members in case of emergencies.
+  tags:
+  - code
+  title: Tenant Help Hotline
+  url: https://brooklynevictiondefense.org/
+- date: 6-1-2019
+  organization: <em>Sludge</em>
+  skills:
+  - Selenium
+  - BeautifulSoup
+  - SQL
+  - Twilio
+  synopsis: "I developed and continue to maintain an app which downloads congressional\
+    \ financial disclosure forms for <em>Sludge</em>, a non-partisan site dedicated\
+    \ to investigating money in politics.<br><br>\n        A few of the stories which\
+    \ utilized data from the app:\n        <ul>\n        <li><a href='https://readsludge.com/2020/01/13/the-members-of-congress-who-profit-from-war/'>The\
+    \ Members of Congress Who Profit From War</a></li>\n        <li><a href='https://readsludge.com/2020/01/03/members-of-congress-own-up-to-93-million-in-fossil-fuel-stocks/'>Members\
+    \ of Congress Own Up to $93 Million in Fossil Fuel Stocks</a></li>\n        <li><a\
+    \ href='https://www.theguardian.com/us-news/2019/sep/19/us-senators-investments-conflict-of-interest'>Revealed:\
+    \ how US senators invest in firms they are supposed to regulate</a></li>\n   \
+    \     <li><a href='https://readsludge.com/2019/04/10/reps-questioning-megabank-ceos-own-stock-in-their-companies/'>Reps\
+    \ Questioning Megabank CEOs Own Stock in Their Companies</a></li>\n        </ul>"
+  tags:
+  - code
+  title: Congressional Financial Disclosure Scraper
+
+- date: 8-1-2023
+  organization: <em>The Real News</em>
+  position: Developer
+  skills:
+  - Plotly Dash
+  - Flask
+  - AWS
+  - Elastic Beanstalk
+  synopsis: Creating a civilian-facing dashboard for local crime statistics as reported
+    to the FBI.
+  tags:
+  - work
+  url: https://www.therealnews.com
+
+- date: 9-1-2018
+  end_date: 5-1-2020
+  organization: General Assembly
+  position: Instructional Associate
+  synopsis: 'Training students in data science methods, concepts and technologies,
+    including: bash, python, data mining, supervised and unsupervised learning techniques,
+    model building, forecasting, SQL, AWS and NLP.'
+  tags:
+  - work
+  url: https://generalassemb.ly/
+
+- date: 9-1-2020
+  synopsis: A simple Python wrapper for the Google Sheets API, for easy investigation
+    and sharing of .csv-like data without the complications of import and exporting.
+  tags:
+  - code
+  title: G Sheets Tools
+  url: https://github.com/afriedman412/g-sheets-tools
+
+- date: 8-31-2023
+  skills:
+  - Flask
+  - JavaScript
+  - CSS
+  - Jinja2
+  synopsis: A web app for getting latitude and longitude coordinates. Somebody was
+    looking for one and there wasn't one, so I built one.
+  tags:
+  - code
+  title: LatLong
+  url: http://latlong.dnpdata.com
+
+- date: 9-22-2023
+  skills:
+  - Flask
+  - JavaScript
+  - CSS
+  - Jinja2
+  synopsis: Extracts all contributions and expenses from IRS Form 8872, which tracks
+    financial disclosure for Political Action Committees (PACs)
+  tags:
+  - code
+  title: 8872 Data Extractor
+  url: https://extract-8872-bf8fc2157378.herokuapp.com/

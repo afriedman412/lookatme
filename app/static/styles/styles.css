@@ -71,12 +71,12 @@ body {
     -ms-text-size-adjust: 100%
 }
 
-hr.sectioner {
+div.sectioner hr {
     border: 3px solid var(--dark-green);
     border-radius: 5px;
 }
 
-h1.header {
+div.sectioner h1 {
     text-decoration: none;
     text-align: center;
 }
