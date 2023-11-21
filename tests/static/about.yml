@@ -1,0 +1,36 @@
+title: Testo About
+headline: Check Out Boo Berry!
+email: berry [at] cereal [dot] edu
+image: boo_berry.jpg
+
+socials:
+  twitter: http://twitter.com/trent_holograms
+  linkedin: http://linkedin.com/in/afriedman412
+  github: http://github.com/afriedman412
+
+bio: >-
+  They just call me Boo, they don't know my whole name.
+
+content:
+  header: 'MY CONTENT'
+  tagline: '<em>This is scary!</em>'
+  sections:
+    songs:
+      header: "Some songs I like"
+      content:
+        - artist: Ghostface
+          title: Underwater
+        - artist: Tracy Jordan
+          title: Werewolf Bar Mitzvah
+    books:
+      header: "Bookish"
+      content:
+        - author: R.L. Stine
+          title: Goosebumps
+        - author: Edgar Allen Poe
+          title: some spooky shxt
+
+include: more_bio.html
+
+footer: © 2023 DNP Data
+

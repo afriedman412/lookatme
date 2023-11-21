@@ -1,0 +1,15 @@
+testo:
+  endpoint: "work"
+  parts:
+    - position
+    - <p>
+    - workdate
+    - organization
+    - </p>
+    - synopsis
+
+
+
+
+
+

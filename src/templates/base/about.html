@@ -1,0 +1,38 @@
+
+{% include 'base/head.html' %}
+
+{% import 'macros.jinja' as macros %}
+
+{{ macros.section_header('ABOUT') }}
+<div class="image-crop-container">
+  <img style="width: 65%; margin: auto;"
+    src="{{ url_for('static', filename='images/{}'.format(g.about['image']))}}">
+</div>
+
+{{ g.about['bio'] | safe }}
+
+{% if "include" in g.about %}
+{% include g.about["include"] %}
+{% endif %}
+
+{% if "content" in g.about %}
+{% set content = g.about['content'] %}
+{{ macros.section_header(content['header']) }}
+{{ content['tagline'] | safe }}
+
+{% for media, works in content['sections'].items() %}
+<div>
+  <h4 id="{{c}}">{{ works['header'] }}</h4>
+  <ul>
+    {% for w in works['content'] %}
+    {% if media == "songs" %}
+    <li>{{ w.artist | safe }} - "{{ w.title | safe }}"</li>
+    {% elif media == "books" %}
+    <li>{{ w.author | safe }} - <i>{{ w.title | safe }}</i></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  {% endif %}
+</div>
+{% include 'base/footer.html' %}

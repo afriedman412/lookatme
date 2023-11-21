@@ -14,20 +14,3 @@
     Pandas, PyTorch, SpaCy, BERT, Scikit-Learn, HuggingFace, NLTK, Flask,
     FastAPI, Poetry
 </p>
-{{ macros.section_header('LATELY') }}
-<em>Updated infrequently!</em>
-
-<h4 id="the-last-three-songs-i-listened-to">The last three songs I listened
-    to:</h4>
-<ul>
-    {% for s in g.content['songs'] %}
-    <li>{{ s.artist }} - "{{ s.title }}"</li>
-    {% endfor %}
-</ul>
-
-<h4 id="the-last-three-books-i-read">The last three books I read:</h4>
-<ul>
-    {% for b in g.content['books'] %}
-    <li>{{ b.author }} - <i>{{ b.title }}</i></li>
-    {% endfor %}
-</ul>
