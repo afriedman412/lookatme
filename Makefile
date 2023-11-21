@@ -57,4 +57,4 @@ format:
 	${PYTHON} -m isort --profile black src tests
 
 guni:
-	gunicorn -w 4 -b 0.0.0.0:5000 --env FLASK_ENV=test app:app
+	gunicorn -w 4 -b 0.0.0.0:5000 app:app

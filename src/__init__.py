@@ -9,7 +9,7 @@ from .routes import home, page
 app = Flask(__name__)
 app.config.from_object(Config)
 
-if app.config.get("FLASK_ENV", "test") == "test":
+if app.config.get("FLASK_ENV") == "test":
     app.config["TESTING"] = True
     app.root_path = os.path.dirname(os.path.abspath(__file__))
     app.static_folder = os.path.join(app.root_path, "..", "tests/static")
