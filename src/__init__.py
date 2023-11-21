@@ -9,6 +9,11 @@ from .routes import home, page
 app = Flask(__name__)
 app.config.from_object(Config)
 
+if app.config.get("FLASK_ENV", "test") == "test":
+    app.config["TESTING"] = True
+    app.root_path = os.path.dirname(os.path.abspath(__file__))
+    app.static_folder = os.path.join(app.root_path, "..", "tests/static")
+
 
 def load_data() -> None:
     file_names = app.config.get("YAML_FILES", [])

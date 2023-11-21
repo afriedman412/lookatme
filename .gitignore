@@ -79,3 +79,8 @@ data/
 
 # documentation
 docs/build/*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

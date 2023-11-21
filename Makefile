@@ -55,3 +55,6 @@ lint: check-flake check-mypy check-black check-isort
 format:
 	${PYTHON} -m black src tests
 	${PYTHON} -m isort --profile black src tests
+
+guni:
+	gunicorn -w 4 -b 0.0.0.0:5000 --env FLASK_ENV=test app:app
