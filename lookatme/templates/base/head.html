@@ -20,7 +20,7 @@
       <main>
         <h1><a class="header" href="/">{{ g.about['headline'] }}</a></h1>
         <p>
-          <div class="image-container">
+          <div class="social-container">
             {% for site, url in g.about['socials'].items() %}
             <a href="{{url}}"><img
                 src="{{ url_for('static', filename='images/social/{}.svg'.format(site))}}"
@@ -38,7 +38,7 @@
           {% set link = '<a href="/' + g.tag_templates[tag].endpoint + '">' + tag.capitalize() + '</a>'
           %}
           {% else %}
-          {% set link = '<a href="/' + tag + '">' + tag.capitalize() + '</a>' %}
+          {% set link = '<a href="/' + tag + '">' + tag.title() + '</a>' %}
           {% endif %}
           {% set _ = links.append(link) %}
           {% endfor %}

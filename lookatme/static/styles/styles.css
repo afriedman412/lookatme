@@ -25,16 +25,22 @@
     --blue-300: #74c0fc;
     --blue-400: #4dabf7;
     --yellow-100: #fff3bf;
+    --ghost-blue2: #80c3ea;
+    --ghost-blue: #0845a9;
+    --ghost-grey: #968f7f;
+    --ghost-purple: #5b054f;
+
     --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --body-font-size: 16px;
     --body-line-height: 1.5;
     --body-color: var(--gray-700);
     --body-bg: #fff;
-    --link-color: var(--dark-green);
-    --link-hover-color: var(--green);
+    --link-color: var(--ghost-purple);
+    --link-hover-color: var(--ghost-grey);
     --heading-color: var(--gray-900);
     --border-color: var(--gray-300);
     --border-radius: .25rem;
+    --sectioner-color: var(--ghost-blue);
     --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --code-color: var(--grape);
     --code-bg: var(--gray-000);
@@ -42,19 +48,6 @@
     --spacer-2: calc(var(--spacer) * 1.5);
     --spacer-3: calc(var(--spacer) * 3)
 }
-
-/* 
-@media(prefers-color-scheme: dark) {
-    :root {
-        --body-color: var(--gray-300);
-        --body-bg: var(--gray-800);
-        --heading-color: #fff;
-        --link-color: var(--blue-300);
-        --link-hover-color: var(--blue-400);
-        --border-color: rgba(255, 255, 255, .15);
-        --code-bg: var(--gray-900)
-    }
-} */
 
 * {
     box-sizing: border-box
@@ -72,7 +65,7 @@ body {
 }
 
 div.sectioner hr {
-    border: 3px solid var(--dark-green);
+    border: 3px solid var(--sectioner-color);
     border-radius: 5px;
 }
 
@@ -106,32 +99,30 @@ img {
     border-radius: var(--border-radius)
 }
 
+.social-container {
+    display: flex;
+}
+
+.social-container img {
+    margin-right: 10px;
+}
+
 .image-container {
-    white-space: nowrap;
+
     /* Prevent line breaks between images */
 }
 
+.image-container {
+    text-align: center;
+    line-height: 100vh;
+    white-space: nowrap;
+}
+
 .image-container img {
-    display: inline-block;
-    vertical-align: top;
-    /* Adjust vertical alignment if needed */
-    margin-right: 10px;
-    /* Add some spacing between images */
+    vertical-align: middle;
+    margin: 1.5rem auto 1.5rem auto;
 }
 
-.image-crop-container {
-    height: 500px;
-    /* Set the desired height of the cropped area */
-    overflow: hidden;
-    /* Hide the content that overflows the container */
-    position: relative;
-    /* Establish a positioning context for the child elements */
-}
-
-
-.skill {
-    color: var(--dark-green)
-}
 
 hr.new5 {
     border: 3px solid var(--dark-green);

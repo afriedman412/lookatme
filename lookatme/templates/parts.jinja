@@ -1,10 +1,12 @@
 {# parts.jinja #}
 
-{% macro skills(e) %}
-{% if 'skills' in e %}
-<span class="skill"><b>SKILLS:</b></span><br> {{ e.skills | join(", ") }}
-{% endif %}
+{% macro skill(e) %}
+<p>
+<strong>{{ e.skill }}</strong>:<br>
+{{ e.description }}
+</p>
 {% endmacro %}
+
 
 {% macro responsibilities(e) %}
 {% if 'responsibilities' in e %}
@@ -57,4 +59,34 @@
 
 {% macro position(e) %}
 <h2>{{ e.position }}</a></h2>
+{% endmacro %}
+
+{% macro school(e) %}
+<h2>{{ e.school }}</a></h2>
+{% endmacro %}
+
+{% macro degree(e) %}
+{{ e.degree }}
+{% endmacro %}
+
+{% macro school_notes(e) %}
+<ul>
+{% for d in e.school_notes %}
+<li>{{ d }}</li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro content_header(e) %}
+<h3>{{ e.header }}</a></h2>
+{% endmacro %}
+
+{% macro media(e) %}
+{% for m in e.media %}
+{% if e.media_type == "books" %}
+- {{ m.by }} - <em>{{ m.title }}</em><br>
+{% else %}
+- {{ m.by }} - "{{ m.title }}<br>
+{% endif %}
+{% endfor %}
 {% endmacro %}

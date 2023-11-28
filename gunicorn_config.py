@@ -1,2 +1,2 @@
-workers = 4  # Adjust the number of workers based on your requirements
+workers = 4
 bind = "0.0.0.0:5000"

@@ -1,5 +1,5 @@
 testo:
-  endpoint: "work"
+  endpoint: work
   parts:
     - position
     - <p>

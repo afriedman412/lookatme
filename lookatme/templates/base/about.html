@@ -1,0 +1,18 @@
+
+{% include 'base/head.html' %}
+
+{% import 'macros.jinja' as macros %}
+
+{{ macros.section_header('ABOUT') }}
+<div class="image-container">
+  <img style="width: 50%;"
+    src="{{ url_for('static', filename='images/{}'.format(g.about['image']))}}">
+</div>
+
+{{ g.about['bio'] | safe }}
+
+{% if "include" in g.about %}
+{% include g.about["include"] %}
+{% endif %}
+
+{% include 'base/footer.html' %}

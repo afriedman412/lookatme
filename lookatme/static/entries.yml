@@ -1,0 +1,106 @@
+- skill: Charismatic Presence
+  description: Captivating and friendly demeanor, capable of connecting with individuals of all ages.
+  tags: 
+    - skills
+
+- skill: Part of a Complete Breakfast
+  description: Fortified with vitamins and minerals, with spooky marshmallows in every bite!
+  tags: 
+    - skills
+  
+  
+- skill: Team Player
+  description: Collaborative and able to work effectively with other General Mills mascots, including Count Chocula, Franken Berry and Frute Bruit.
+  tags: 
+    - skills
+
+- skill: Creativity
+  description: Developed and implemented innovative marketing strategies to keep Boo Berry relevant in the competitive cereal market.
+  tags: 
+    - skills
+
+- skill: Adaptability
+  description: Successfully embraced changes in cereal preferences and adapted marketing strategies accordingly.
+  tags:
+    - skills
+
+- skill: Public Speaking
+  description: Articulate speaker with experience presenting to both large and small audiences.
+  tags: 
+    - skills
+
+- skill: Social Media Management
+  description: Proficient in creating engaging content and maintaining an active online presence.
+  tags:
+    - skills
+
+- date: 10-1-1973
+  organization: General Mills, Monster Cereal Division
+  url: https://www.snackhistory.com/boo-berry/
+  position: Official Mascot
+  synopsis: "<ul>
+    <li>
+      <strong>Brand Ambassador:</strong>
+      <br>
+      Represented Boo Berry cereal at numerous events, ensuring a positive and memorable brand experience for consumers.
+    </li>
+    <li>
+      <strong>Public Relations:</strong>
+      <br>
+      Conducted interviews and appearances on various media platforms to promote Boo Berry and engage with the target audience.
+    </li>
+    <li>
+      <strong>Social Media Presence:</strong>
+      <br>
+      Managed and enhanced Boo Berry's social media accounts, creating engaging content and fostering a sense of community among fans.
+    </li>
+    <li>
+      <strong>Event Coordination:</strong>
+      <br>
+      Organized and participated in promotional events, including product launches, giveaways, and collaborations with other General Mills mascots.
+    </li>
+ "
+  tags:
+  - experience
+
+- tags:
+  - education
+  school: Haunting University
+  degree: Bachelor of Scareology
+  date: 4-1-1970
+  school_notes:
+    - Graduated with honors
+    - Specialized in Friendly Ghost Outreach and Community Engagement
+
+- tags:
+  - education
+  school: Pennsylvania Paranormal Insitute
+  degree: Masters in Hovering
+  date: 4-1-1973
+  school_notes:
+    - Voted Most Likely To Succeed
+
+- tags:
+  - content
+  media_type: songs
+  header: "Some songs I like!"
+  media: 
+    - by: Ghostface
+      title: Underwater
+    - by: Mitski
+      title: Your Best American Girl
+    - by: Tracy Jordan
+      title: Werewolf Bar Mitzvah
+
+- tags:
+  - content
+  media_type: books
+  header: "Some books I read recently!"
+  media:
+    - by: R.L. Stine
+      title: Goosebumps
+    - by: Edgar Allen Poe
+      title: iuno something spooky
+    - by: F. Scott Fitzgerald
+      title: The Great Gatsby
+

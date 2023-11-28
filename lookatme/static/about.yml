@@ -1,0 +1,20 @@
+title: Boo Berry's Website
+headline: Boo Berry
+email: boo [at] berries [dot] biz
+image: boo_berry.jpg
+
+socials:
+  twitter: http://twitter.com/real_boo_berry
+  linkedin: http://linkedin.com/in/real_boo_berry
+
+bio: >-
+  Friendly and energetic ghost seeking a challenging role as the official mascot for General Mills' Boo Berry cereal.<br><br>
+
+  Proven track record of spreading joy and delight among cereal enthusiasts.<br><br>
+  
+  Possesses excellent communication skills and a passion for promoting a healthy and balanced breakfast lifestyle.
+
+include: more_bio.html
+
+footer: © 2023 Casper Productions
+

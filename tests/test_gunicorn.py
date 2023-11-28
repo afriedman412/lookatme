@@ -1,3 +1,5 @@
+import os
+
 import pytest
 import requests
 
@@ -7,7 +9,14 @@ def gunicorn_server():
     import subprocess
     import time
 
-    command = ["gunicorn", "--config", "gunicorn_config.py", "app:app"]
+    command = [
+        "gunicorn",
+        "--config",
+        "gunicorn_config.py",
+        "--env",
+        "FLASK_ENV=test",
+        "app:app",
+    ]
     process = subprocess.Popen(command)
 
     time.sleep(2)
@@ -15,6 +24,10 @@ def gunicorn_server():
     yield process
     process.terminate()
     process.wait()
+
+
+def test_guni_env(gunicorn_server):
+    assert os.environ.get("FLASK_ENV") == "test"
 
 
 def test_guni(gunicorn_server):

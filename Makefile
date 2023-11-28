@@ -1,5 +1,6 @@
 VENV_NAME = venv
 VENV_PATH = $(VENV_NAME)/bin/activate
+SRC_DIR = lookatme
 PYTHON := venv/bin/python
 
 .PHONY: venv
@@ -16,7 +17,7 @@ endif
 .PHONY: test
 
 test:
-	python -m pytest tests/
+	@export FLASK_ENV=test && python -m pytest tests/
 
 .PHONY: install
 
@@ -39,22 +40,22 @@ clean:
 	rm -rf $(VENV_NAME)
 
 check-black:
-	${PYTHON} -m black --check src tests
+	${PYTHON} -m black --check $(SRC_DIR) tests
 
 check-isort:
-	${PYTHON} -m isort --profile black --check-only src tests
+	${PYTHON} -m isort --profile black --check-only $(SRC_DIR)  tests
 
 check-flake:
-	${PYTHON} -m flake8 src tests
+	${PYTHON} -m flake8 $(SRC_DIR)  tests
 
 check-mypy:
-	${PYTHON} -m mypy --strict --implicit-reexport src
+	${PYTHON} -m mypy --strict --implicit-reexport $(SRC_DIR) 
 
 lint: check-flake check-mypy check-black check-isort
 
 format:
-	${PYTHON} -m black src tests
-	${PYTHON} -m isort --profile black src tests
+	${PYTHON} -m black $(SRC_DIR)  tests
+	${PYTHON} -m isort --profile black $(SRC_DIR)  tests
 
 guni:
 	gunicorn -w 4 -b 0.0.0.0:5000 app:app

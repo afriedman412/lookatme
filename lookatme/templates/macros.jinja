@@ -9,7 +9,7 @@
 </div>
 {% endmacro %}
 
-{% macro tag_container(parts_list, header_text, entries) %}
+{% macro tag_container(parts_list, header_text, entries, sep) %}
 {{ section_header(header_text) }}
 {% for e in entries %}
     {% for m in parts_list %}
@@ -22,7 +22,9 @@
         {% endif %}
     {% endfor %}
     {% if not loop.last %}
+    {% if sep==True %}
     <hr>
+    {% endif %}
     {% endif %}
 {% endfor %}
 {% endmacro %}

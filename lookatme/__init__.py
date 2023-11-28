@@ -1,18 +1,31 @@
+import logging
 import os
 
 import yaml
-from flask import Flask, g
+from flask import Flask, g, request
 
-from .config import Config
+from .config import Config, TestingConfig
+from .helpers import add_log
 from .routes import home, page
 
 app = Flask(__name__)
-app.config.from_object(Config)
 
-if app.config.get("FLASK_ENV") == "test":
-    app.config["TESTING"] = True
-    app.root_path = os.path.dirname(os.path.abspath(__file__))
-    app.static_folder = os.path.join(app.root_path, "..", "tests/static")
+
+def log_request_info() -> None:
+    app.logger.debug("Request: %s %s", request.method, request.path)
+
+
+if os.environ.get("FLASK_ENV") == "test":
+    app.logger.setLevel(logging.DEBUG)
+    app.logger.addHandler(add_log())
+    app.logger.debug("loading TEST env in init!!")
+    app.config.from_object(TestingConfig)
+    app.static_folder = "../tests/static"
+    app.template_folder = "./templates"
+    app.before_request(log_request_info)
+else:
+    app.logger.debug("loading NORMAL env in init!!")
+    app.config.from_object(Config)
 
 
 def load_data() -> None:
