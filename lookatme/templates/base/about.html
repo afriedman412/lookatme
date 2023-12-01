@@ -10,9 +10,7 @@
 </div>
 
 {{ g.about['bio'] | safe }}
-
-{% if "include" in g.about %}
-{% include g.about["include"] %}
+{% if 'include' in g.about %}
+{% include g.about.get('include') %}
 {% endif %}
-
 {% include 'base/footer.html' %}

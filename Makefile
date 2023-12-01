@@ -39,11 +39,11 @@ update: venv
 clean:
 	rm -rf $(VENV_NAME)
 
-check-black:
-	${PYTHON} -m black --check $(SRC_DIR) tests
+check-autopep:
+	${PYTHON} -m autopep8 $(SRC_DIR)/*.py tests/*.py --in-place
 
 check-isort:
-	${PYTHON} -m isort --profile black --check-only $(SRC_DIR)  tests
+	${PYTHON} -m isort --check-only $(SRC_DIR)  tests
 
 check-flake:
 	${PYTHON} -m flake8 $(SRC_DIR)  tests
@@ -51,11 +51,11 @@ check-flake:
 check-mypy:
 	${PYTHON} -m mypy --strict --implicit-reexport $(SRC_DIR) 
 
-lint: check-flake check-mypy check-black check-isort
+lint: check-flake check-mypy check-autopep check-isort
 
 format:
-	${PYTHON} -m black $(SRC_DIR)  tests
-	${PYTHON} -m isort --profile black $(SRC_DIR)  tests
+	${PYTHON} -m autopep8 $(SRC_DIR)/*.py tests/*.py --in-place
+	${PYTHON} -m isort $(SRC_DIR) tests
 
 guni:
 	gunicorn -w 4 -b 0.0.0.0:5000 app:app

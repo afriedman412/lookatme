@@ -6,7 +6,7 @@ from .helpers import get_sort_date
 
 
 def home() -> str:
-    return render_template("base/about.html", tag="about")
+    return render_template("base/about.html", ttt="more_bio.html")
 
 
 def page(tag: str) -> Union[str, bytes]:

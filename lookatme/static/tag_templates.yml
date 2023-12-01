@@ -1,8 +1,26 @@
 home:
   endpoint: ""
+  priority: 1
+
+content:
+  header-text: stuff im into
+  endpoint: stuff
+  headline: Stuff I Like
+  parts:
+    - content_header
+    - media
+  priority: 5
+
+skills:
+  parts:
+    - skill
+    - <br>
+    - description
+  sep: False
+  priority: 3
 
 experience:
-  header-text: Professional Experience
+  headline: Professional Experience
   parts:
     - position
     - <p>
@@ -12,13 +30,7 @@ experience:
     - synopsis
     - responsibilities
   sep: True
-
-skills:
-  parts:
-    - skill
-    - <br>
-    - description
-  sep: False
+  priority: 2
 
 education:
   parts:
@@ -27,10 +39,6 @@ education:
     - <br>
     - school_notes
   sep: True
+  priority: 4
 
-content:
-  endpoint: stuff
-  header-text: Stuff I Like
-  parts:
-    - content_header
-    - media
+

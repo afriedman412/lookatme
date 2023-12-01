@@ -31,17 +31,5 @@
             <em>{{ g.about['email'] }}</em>
           </p>
 
-          {% set links = [] %}
-          {% for tag in g.tag_templates|sort(attribute="priority")
-          %}
-          {% if 'endpoint' in g.tag_templates[tag] %}
-          {% set link = '<a href="/' + g.tag_templates[tag].endpoint + '">' + tag.capitalize() + '</a>'
-          %}
-          {% else %}
-          {% set link = '<a href="/' + tag + '">' + tag.title() + '</a>' %}
-          {% endif %}
-          {% set _ = links.append(link) %}
-          {% endfor %}
-
-          {{ links | join(" • ") | safe}}
+          {{ g.header_links | safe }}
         </p>

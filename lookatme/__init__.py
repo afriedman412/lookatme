@@ -5,7 +5,7 @@ import yaml
 from flask import Flask, g, request
 
 from .config import Config, TestingConfig
-from .helpers import add_log
+from .helpers import add_log, create_header_links
 from .routes import home, page
 
 app = Flask(__name__)
@@ -40,6 +40,7 @@ def load_data() -> None:
             app.logger.warning(f"YAML file not found: {yaml_path}")
         except yaml.YAMLError as e:
             app.logger.error(f"Error loading YAML file {yaml_path}: {e}")
+    g.header_links = create_header_links(g.tag_templates)
 
 
 app.before_request(load_data)

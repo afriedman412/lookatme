@@ -27,5 +27,13 @@ def read_templates(tag: str, tag_data: dict[str, Any]) -> str:
     for i in tag_data.get("include", []):
         tag_template_text += "{{ " + f"parts['{i}'](e)" + " }}\n"
     tag_template_text += "{% endmacro %}"
-    print(tag_template_text)
     return tag_template_text
+
+
+def create_header_links(tag_templates: dict[str, Any], connector: str = " • ") -> str:
+    header_links = []
+    for t in sorted(tag_templates, key=lambda t: tag_templates[t].get("priority", 999)):
+        endpoint = tag_templates[t].get("endpoint", t).lower()
+        link_text = tag_templates[t].get("header-text", t).title()
+        header_links.append(f"<a href='/{endpoint}'>{link_text}</a>")
+    return connector.join(header_links)
