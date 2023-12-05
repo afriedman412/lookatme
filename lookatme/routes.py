@@ -32,11 +32,11 @@ def page(tag: str) -> Union[str, bytes]:
         )
         parts_list = g.tag_templates.get(tag).get("parts")
         sep = g.tag_templates.get(tag).get("sep")
-        header_text = g.tag_templates.get(tag).get("header-text", tag)
+        headline = g.tag_templates.get(tag).get("headline", tag)
         return render_template(
             "base/page.html",
             parts_list=parts_list,
-            header_text=header_text,
+            headline=headline,
             entries=filtered_entries,
             sep=sep,
         )

@@ -16,7 +16,6 @@ skills:
     - skill
     - <br>
     - description
-  sep: False
   priority: 3
 
 experience:
