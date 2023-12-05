@@ -14,11 +14,11 @@ I made **Look At Me** because I was having trouble figuring out how to best stru
 
 <a name="basics"></a>
 ## Basics
-- Define `Parts` in Jinja in `templates/parts.jinja`
-- Define `Tags` as collections of `Parts` in `static/tag_templates.yml`
-- Add all your `Entries` to `static/entries.yml`, specifying the relevant `Tag` for each `Entry` in the entry's `tag` dictionary
+- Define **Parts** in Jinja in `templates/parts.jinja`
+- Define **Tags** as collections of **Parts** in `static/tag_templates.yml`
+- Add all your **Entries** to `static/entries.yml`, specifying the relevant **Tag** for each **Entry** in the entry's `tag` dictionary
 
-**Look At Me** will automatically generate a page for each `Tag` populated with all each corrosponding `Entry` and its variables.
+**Look At Me** will automatically generate a page for each **Tag** populated with all each corrosponding **Entry** and its variables.
 
 #### Example:
 A `parts.jinja` file:
@@ -94,11 +94,11 @@ Some `entries.yml`:
 ... and this page for Showings...
 <center><img style="width: 50%" src="docs/showings.png"></center>
 
-"George Goes To The Zoo" gets different info and formatting depending the `Tag` page, and "Tryptophan" only shows up on Projects because it isn't tagged for "showings".
+"George Goes To The Zoo" gets different info and formatting depending the **Tag** page, and "Tryptophan" only shows up on Projects because it isn't tagged for "showings".
 
 <a name="about"></a>
 ## About
-**Look At Me** creates a landing `About` page from information in the `about.yml` file. It also uses information in this file to customize the <a href="#header">`Header`</a>.
+**Look At Me** creates a landing **About** page from information in the `about.yml` file. It also uses information in this file to customize the **Header** at the top of every page on the site, and the **Footer** at the bottom.
 
 It takes the following arguments:
 
@@ -128,18 +128,18 @@ Appears in the footer of every page.
 
 <a name="header"></a>
 ## Header
-**Look At Me** automatically generates a `Header` for every page on the site from information provided in `about.yml`. It also generates navigation links to the page for every `Tag`, which appear in the header as well. The order, text and destination for these navigation links can all be customized in the `Tag Templates` file.
+**Look At Me** automatically generates a **Header** for every page on the site from information provided in `about.yml`. It also generates navigation links to the page for every **Tag**, which appear in the header as well. The order, text and destination for these navigation links can all be customized in the `tag_templates.yml` file.
 
 <a name="tagtemplates"></a>
 ## More On Tag Templates
 <strong>HTML</strong><br>
-As well as the name of defined `Parts`, you can also put html code directly into the `Tag` templates. Theoretically, you don't even need to use `Parts` if your formatting is simple, but `Parts` allows you to construct more complicated Jinja clauses if you want to.
+As well as the name of defined **Parts**, you can also put html code directly into the **Tag** templates. Theoretically, you don't even need to use **Parts** if your formatting is simple, but **Parts** allows you to construct more complicated Jinja clauses if you want to.
 
 <strong>`sep`</strong><br>
 If "True", each entry will be separated with an `<hr>` line.
 
 <strong>`endpoint`</strong><br>
-If provided in a `Tag` template, `your.url/endpoint` will load the page for that `Tag`.
+If provided in a **Tag** template, `your.url/endpoint` will load the page for that `Tag`.
 
 <strong>`headline`</strong><br>
 Text for section/Page header. Defaults to `Tag`.
